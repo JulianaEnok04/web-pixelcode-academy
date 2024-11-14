@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCode Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./IMAGES/logo.png">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="./IMAGES/logo.png" alt="Logo" class="logo">
+        <h1>PixelCode Academy</h1>
+        <div class="header-right">
+            <form id="searchForm">
+                <input type="text" placeholder="Search..." id="searchInput" class="search-box">
+            </form>
+            <div class="user-info">
+                <a href="/profile.html" class="user-icon">
+                    <i class="fas fa-user-circle"></i> <!-- Ikon pengguna -->
+                </a>
+                <span class="username">Username</span> <!-- Ganti dengan nama pengguna -->
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="./HTML/Profil.html">Profile</a>
+        <a href="./HTML/Program.html">Program</a>
+        <a href="./HTML/login.html">Login</a>
+        <a href="./HTML/register.html">Register</a>
+        <a href="./HTML/faq.html">FAQ</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Gambar Utama -->
+        <div class="large-image">
+            <img src="./IMAGES/landingpage.jpg" alt="Gambar Utama">
+        </div>
+
+        <!-- Teks Welcome -->
+        <div class="welcome-text">
+            <h1>Welcome to PixelCode Academy!</h1>
+            <p>Master web development skills with hands-on, professional training. Start your journey to becoming a
+                top-notch developer with us!</p>
+        </div>
+    </div>
+
+    <!-- Article Section -->
+    <div class="article-section">
+        <h2>Latest Articles</h2>
+        <p>
+            Stay updated with the latest trends in web development and digital technology. From coding tips to industry
+            insights, our articles provide valuable information to help you grow as a developer.
+        </p>
+        <p>
+            Learn about new frameworks, improve your programming techniques, and gain insights into career opportunities
+            in the tech industry.
+        </p>
+
+        <!-- Grid Video Section -->
+        <div class="video-grid">
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/salY_Sm6mv4" allowfullscreen></iframe>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/Z4pCqK-V_Wo" allowfullscreen></iframe>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/upDLs1sn7g4" allowfullscreen></iframe>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/0DYDtZgmZdA" allowfullscreen></iframe>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/27axs9dO7AE" allowfullscreen></iframe>
+            </div>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/SWYqp7iY_Tc" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Grid untuk Artikel -->
+        <div class="filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category" onchange="filterArticles()">
+                <option value="all">All</option>
+                <option value="Technology">Technology</option>
+                <option value="Security">Security</option>
+                <option value="News">News</option>
+            </select>
+        </div>
+
+        <div class="article-grid">
+            <div class="article-card" data-category="Security">
+                <a
+                    href="https://tekno.kompas.com/read/2024/10/13/15030087/contoh-password-yang-kuat-dan-tips-membuatnya-agar-akun-tak-gampang-dibobol">
+                    <!-- Ganti dengan link artikel yang sesuai -->
+                    <img src="./IMAGES/artikel.jpg" alt="Article 1">
+                    <h3>Examples of Strong Passwords and Tips for Creating Them to Keep Your Account Secure.</h3>
+                    <p>KOMPAS.com - It is important for users to know examples of strong passwords or examples of secure
+                        passwords so that
+                        accounts are not easily broken into. Password is a security system available on all platforms to
+                        protect user accounts.
+                    </p>
+                </a>
+            </div>
+            <div class="article-card" data-category="Technology">
+                <a
+                    href="https://www.cnnindonesia.com/teknologi/20241012120240-185-1154600/yogyakarta-bakal-punya-pusat-riset-dan-pengembangan-ai">
+                    <!-- Ganti dengan link artikel yang sesuai -->
+                    <img src="./IMAGES/artikel 2.jpg" alt="Article 2">
+                    <h3>Yogyakarta Will Have an AI Research and Development Center</h3>
+                    <p>Jakarta, CNN Indonesia -- The Ministry of Communication and Informatics (Kominfo) said
+                        Yogyakarta's College of Multi Media
+                        (STTM) will be
+                        encouraged to become a research and development space for artificial intelligence (AI), in
+                        addition to general digital
+                        talent development.
+                    </p>
+                </a>
+            </div>
+            <div class="article-card" data-category="News">
+                <a
+                    href="https://www.cnnindonesia.com/teknologi/20241011093827-190-1154119/terima-kode-autentikasi-2-faktor-yang-tak-diminta-lakukan-cara-ini">
+                    <!-- Ganti dengan link artikel yang sesuai -->
+                    <img src="./IMAGES/artikel 3.jpg" alt="Article 3">
+                    <h3>Receive an Unsolicited 2-Factor Authentication Code, Do This!</h3>
+                    <p>Jakarta, CNN Indonesia -- Hackers are increasingly active in abusing your personal accounts.
+                        Hacking attempts happen
+                        time and time again until hackers send you a text with a two-factor authentication code from a
+                        service you've never
+                        signed up for.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slideshow Gallery -->
+    <div class="gallery">
+        <h2>"In every line of code, we embark on a journey of innovation, transforming our projects into reality and
+            paving the way
+            for a brighter future."</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./IMAGES/study.jpg" alt="Kegiatan Belajar">
+                <div class="text">Learning Activities 1</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./IMAGES/study 2.jpg" alt="Kegiatan Belajar">
+                <div class="text">Learning Activitiesr 2</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./IMAGES/study 3.jpg" alt="Kegiatan Belajar">
+                <div class="text">Learning Activities 3</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./IMAGES/study 4.jpg" alt="Kegiatan Belajar">
+                <div class="text">Learning Activities 4</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./IMAGES/study 5.jpg" alt="Kegiatan Belajar">
+                <div class="text">Learning Activities 5</div>
+            </div>
+
+            <div class="mySlides fade">
+                <video controls>
+                    <source src="./VIDEOS/study.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text">Learning Activities</div>
+            </div>
+
+            <!-- <div class="mySlides fade">
+            <video controls>
+                <source src="./VIDEOS/study 2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text">Testimonial Siswa 2</div>
+        </div> -->
+
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PixelCode Academy. All rights reserved.</p>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <div class="footer-icons">
+                <a href="mailto:infoedu@pixelcodeacademy.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+62821345678" title="Phone">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://maps.google.com/?q=Jl.+Pelatihan+No.+410,+Bandung,+Jawa+Barat" target="_blank"
+                    title="Address">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+            <p>Jl. Pelatihan No. 410, Bandung, Jawa Barat</p>
+            <p><a href="mailto:infoedu@pixelcodeacademy.com">infoedu@pixelcodeacademy.com</a></p>
+            <p><a href="tel:+62821345678">+62 821 345 678</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/article.js"></script> <!-- Memanggil file JavaScript eksternal -->
+    <script src="./js/searchbar.js"></script>
+
+</body>
+
+</html>

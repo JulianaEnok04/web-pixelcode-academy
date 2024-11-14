@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #001942, #000814, #001c49, #004d73);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+   background-color: #07001a;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+    height: 450px;
+}
+
+.login-box h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    color: #ffffffcb;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff60;
+    background-color: #07001a;
+    color: #fff;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #fffb00b7;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #0061ff, #00d4ff);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #004b99, #00aaff);
+}
+
+/* Styling untuk link registrasi */
+.register-text {
+    margin-top: 20px;
+    color: #ffffffcb;
+    font-size: 0.9rem;
+}
+
+.register-text a {
+    color: #fffb00b7;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    color: #00aaff;
+}
